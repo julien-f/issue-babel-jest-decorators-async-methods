@@ -1,0 +1,22 @@
+{
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-decorators"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.37",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^22.1.0",
+    "jest": "^22.1.1"
+  },
+  "engine": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "prestart": "babel index.spec.js",
+    "start": "jest index.spec.js"
+  }
+}
